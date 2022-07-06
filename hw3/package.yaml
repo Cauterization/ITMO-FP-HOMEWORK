@@ -42,6 +42,7 @@ library:
     - serialise
     - directory
     - template-haskell
+    - exceptions
 
 executables:
   hi:

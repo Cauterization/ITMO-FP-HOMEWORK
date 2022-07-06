@@ -1,10 +1,10 @@
 module HW1.T4
-  ( tfoldr
+  ( tfoldr 
   ) where
 
-import HW1.T3 (Tree (Branch, Leaf))
+import HW1.T3
 
+-- | Foldr a tree
 tfoldr :: (a -> b -> b) -> b -> Tree a -> b
+tfoldr = foldr
 
-treeToList :: Tree a -> [a]    -- output list is sorted
-treeToList = tfoldr (:) []

@@ -26,10 +26,11 @@ library
   exposed-modules:
       HW3.Action
       HW3.Base
+      HW3.Bytes
       HW3.Evaluator
-      HW3.Helper
       HW3.Parser
       HW3.Pretty
+      HW3.Utils
   other-modules:
       Paths_hw3
   hs-source-dirs:
@@ -40,6 +41,7 @@ library
     , bytestring
     , containers
     , directory
+    , exceptions
     , megaparsec
     , mtl
     , parser-combinators
@@ -69,6 +71,259 @@ executable hi
     , hw3
   default-language: Haskell2010
 
+test-suite T1
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T1
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T10
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T10
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T11
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T11
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T2
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T2
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T3
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T3
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T4
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T4
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T5
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T5
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T6
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T6
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T7
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T7
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T8
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T8
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T9
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw3
+  hs-source-dirs:
+      baseTests/T9
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw3
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
 test-suite hi-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
@@ -96,7 +351,9 @@ test-suite hi-test
       hspec-discover:hspec-discover
   build-depends:
       HUnit
+    , QuickCheck
     , base >=4.7 && <5
+    , bytestring
     , containers
     , directory
     , either
